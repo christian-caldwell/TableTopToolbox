@@ -18,7 +18,6 @@ app.get('*', (req, res) => {
     if (!process.env.NODE_ENV || process.env.NODE_ENV.toString().trim() !== 'production'){
         res.send('Running Server In Development Mode')
     } else {
-        res.send('Running Server In Production Mode')
         res.sendFile(path.join(__dirname + '/build/index.html'));
     }
 })
