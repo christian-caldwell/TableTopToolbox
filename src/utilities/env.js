@@ -26,4 +26,5 @@ function setProdEnv(app) {
     process.env.DB_URL = 'mongodb://localhost:27017/tt-db';
     process.env.TOKEN_SECRET = 'JumpShoeAppleTripMouse';
     app.use(express.json());
+    app.use(cors());
 }

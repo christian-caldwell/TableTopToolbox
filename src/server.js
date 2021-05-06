@@ -3,6 +3,7 @@ const app = express();
 import {registerRoutes} from './routes';
 import {connectToDB} from './utilities/db';
 import {setEnvironment} from './utilities/env';
+const cors = require('cors');
 import path from 'path';
 
 setEnvironment(app);
